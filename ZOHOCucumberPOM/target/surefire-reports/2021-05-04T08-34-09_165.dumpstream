@@ -1,0 +1,4 @@
+# Created at 2021-05-04T08:34:11.665
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Whizdom-Trainings\Online Training Workspace\March2021\ZOHOCucumberPOM\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

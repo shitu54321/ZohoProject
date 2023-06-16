@@ -1,0 +1,399 @@
+<html>
+<head>
+<title>TestNG:  Cucumber Runner</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Cucumber Runner</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 04 08:34:16 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31865 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='zoho.runner.MyRunner.runScenario()'><b>runScenario</b><br>Test class: zoho.runner.MyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deletion of the lead", "Optional[Managing Leads]"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RTOOT5Q&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0080E7D3+124883]
+	Ordinal0 [0x0080E7B1+124849]
+	GetHandleVerifier [0x00A58688+193832]
+	GetHandleVerifier [0x00A4CB71+145937]
+	GetHandleVerifier [0x00A4C7F9+145049]
+	GetHandleVerifier [0x00A4BF7D+142877]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A54679+177433]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4BD62+142338]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A52A0A+170154]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4BD62+142338]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A50D69+162825]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4BD62+142338]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A5017C+159772]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4BD62+142338]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A476ED+124301]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4AE03+138403]
+	GetHandleVerifier [0x00A4ABF7+137879]
+	GetHandleVerifier [0x00A59930+198608]
+	GetHandleVerifier [0x00A95758+443896]
+	GetHandleVerifier [0x00A947FC+439964]
+	GetHandleVerifier [0x00A9154B+426987]
+	GetHandleVerifier [0x00A74FFD+310941]
+	GetHandleVerifier [0x00A75D8E+314414]
+	GetHandleVerifier [0x00A75D19+314297]
+	GetHandleVerifier [0x00B331EC+1089676]
+	GetHandleVerifier [0x00B317C9+1082985]
+	GetHandleVerifier [0x00B313A3+1081923]
+	GetHandleVerifier [0x00C2D9FD+2115741]
+	Ordinal0 [0x0095B82E+1488942]
+	Ordinal0 [0x008F5A7D+1071741]
+	Ordinal0 [0x008F559B+1070491]
+	Ordinal0 [0x008F54B1+1070257]
+	Ordinal0 [0x0092FF53+1310547]
+	BaseThreadInitThunk [0x77806359+25]
+	RtlGetAppContainerNamedObjectPath [0x77C587A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C58774+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at zoho.managers.WebDriverManager.openBrowser(WebDriverManager.java:86)
+	at zoho.pages.HomePage.load(HomePage.java:16)
+	at zoho.teststeps.Session.zohoLogin(Session.java:23)
+	at ?.I am logged in zoho.com(file:///D:/Whizdom-Trainings/Online%20Training%20Workspace/March2021/ZOHOCucumberPOM/src/test/resources/zoho/leads.feature:24)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace447813937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace447813937'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RTOOT5Q&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0080E7D3+124883]
+	Ordinal0 [0x0080E7B1+124849]
+	GetHandleVerifier [0x00A58688+193832]
+	GetHandleVerifier [0x00A4CB71+145937]
+	GetHandleVerifier [0x00A4C7F9+145049]
+	GetHandleVerifier [0x00A4BF7D+142877]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A54679+177433]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4BD62+142338]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A52A0A+170154]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4BD62+142338]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A50D69+162825]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4BD62+142338]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A5017C+159772]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4BD62+142338]
+	GetHandleVerifier [0x00A4B45E+140030]
+	GetHandleVerifier [0x00A4B6E6+140678]
+	GetHandleVerifier [0x00A4B025+138949]
+	GetHandleVerifier [0x00A476ED+124301]
+	GetHandleVerifier [0x00A4AFE1+138881]
+	GetHandleVerifier [0x00A4AE03+138403]
+	GetHandleVerifier [0x00A4ABF7+137879]
+	GetHandleVerifier [0x00A59930+198608]
+	GetHandleVerifier [0x00A95758+443896]
+	GetHandleVerifier [0x00A947FC+439964]
+	GetHandleVerifier [0x00A9154B+426987]
+	GetHandleVerifier [0x00A74FFD+310941]
+	GetHandleVerifier [0x00A75D8E+314414]
+	GetHandleVerifier [0x00A75D19+314297]
+	GetHandleVerifier [0x00B331EC+1089676]
+	GetHandleVerifier [0x00B317C9+1082985]
+	GetHandleVerifier [0x00B313A3+1081923]
+	GetHandleVerifier [0x00C2D9FD+2115741]
+	Ordinal0 [0x0095B82E+1488942]
+	Ordinal0 [0x008F5A7D+1071741]
+	Ordinal0 [0x008F559B+1070491]
+	Ordinal0 [0x008F54B1+1070257]
+	Ordinal0 [0x0092FF53+1310547]
+	BaseThreadInitThunk [0x77806359+25]
+	RtlGetAppContainerNamedObjectPath [0x77C587A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C58774+180]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at zoho.managers.WebDriverManager.openBrowser(WebDriverManager.java:86)
+	at zoho.pages.HomePage.load(HomePage.java:16)
+	at zoho.teststeps.Session.zohoLogin(Session.java:23)
+	at ?.I am logged in zoho.com(file:///D:/Whizdom-Trainings/Online%20Training%20Workspace/March2021/ZOHOCucumberPOM/src/test/resources/zoho/leads.feature:24)
+</pre></div></td>
+<td>22</td>
+<td>zoho.runner.MyRunner@3571b748</td></tr>
+<tr>
+<td title='zoho.runner.MyRunner.runScenario()'><b>runScenario</b><br>Test class: zoho.runner.MyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creation of a Lead", "Optional[Managing Leads]"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RTOOT5Q&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0080E7D3+124883]
+	Ordinal0 [0x0080E7B1+124849]
+	GetHandleVerifier [0x00A58530+193488]
+	GetHandleVerifier [0x00A4E424+152260]
+	GetHandleVerifier [0x00A4EAE6+153990]
+	GetHandleVerifier [0x00A4FDD5+158837]
+	GetHandleVerifier [0x00A4AC51+137969]
+	GetHandleVerifier [0x00A59930+198608]
+	GetHandleVerifier [0x00A95758+443896]
+	GetHandleVerifier [0x00A947FC+439964]
+	GetHandleVerifier [0x00A9154B+426987]
+	GetHandleVerifier [0x00A74FFD+310941]
+	GetHandleVerifier [0x00A75D8E+314414]
+	GetHandleVerifier [0x00A75D19+314297]
+	GetHandleVerifier [0x00B331EC+1089676]
+	GetHandleVerifier [0x00B317C9+1082985]
+	GetHandleVerifier [0x00B313A3+1081923]
+	GetHandleVerifier [0x00C2D9FD+2115741]
+	Ordinal0 [0x0095B82E+1488942]
+	Ordinal0 [0x008F5A7D+1071741]
+	Ordinal0 [0x008F559B+1070491]
+	Ordinal0 [0x008F54B1+1070257]
+	Ordinal0 [0x0092FF53+1310547]
+	BaseThreadInitThunk [0x77806359+25]
+	RtlGetAppContainerNamedObjectPath [0x77C587A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C58774+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at zoho.managers.WebDriverManager.openBrowser(WebDriverManager.java:86)
+	at zoho.pages.HomePage.load(HomePage.java:16)
+	at zoho.teststeps.Session.zohoLogin(Session.java:23)
+	at ?.I am logged in zoho.com(file:///D:/Whizdom-Trainings/Online%20Training%20Workspace/March2021/ZOHOCucumberPOM/src/test/resources/zoho/leads.feature:24)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace177232560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace177232560'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RTOOT5Q&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0080E7D3+124883]
+	Ordinal0 [0x0080E7B1+124849]
+	GetHandleVerifier [0x00A58530+193488]
+	GetHandleVerifier [0x00A4E424+152260]
+	GetHandleVerifier [0x00A4EAE6+153990]
+	GetHandleVerifier [0x00A4FDD5+158837]
+	GetHandleVerifier [0x00A4AC51+137969]
+	GetHandleVerifier [0x00A59930+198608]
+	GetHandleVerifier [0x00A95758+443896]
+	GetHandleVerifier [0x00A947FC+439964]
+	GetHandleVerifier [0x00A9154B+426987]
+	GetHandleVerifier [0x00A74FFD+310941]
+	GetHandleVerifier [0x00A75D8E+314414]
+	GetHandleVerifier [0x00A75D19+314297]
+	GetHandleVerifier [0x00B331EC+1089676]
+	GetHandleVerifier [0x00B317C9+1082985]
+	GetHandleVerifier [0x00B313A3+1081923]
+	GetHandleVerifier [0x00C2D9FD+2115741]
+	Ordinal0 [0x0095B82E+1488942]
+	Ordinal0 [0x008F5A7D+1071741]
+	Ordinal0 [0x008F559B+1070491]
+	Ordinal0 [0x008F54B1+1070257]
+	Ordinal0 [0x0092FF53+1310547]
+	BaseThreadInitThunk [0x77806359+25]
+	RtlGetAppContainerNamedObjectPath [0x77C587A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C58774+180]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at zoho.managers.WebDriverManager.openBrowser(WebDriverManager.java:86)
+	at zoho.pages.HomePage.load(HomePage.java:16)
+	at zoho.teststeps.Session.zohoLogin(Session.java:23)
+	at ?.I am logged in zoho.com(file:///D:/Whizdom-Trainings/Online%20Training%20Workspace/March2021/ZOHOCucumberPOM/src/test/resources/zoho/leads.feature:24)
+</pre></div></td>
+<td>29</td>
+<td>zoho.runner.MyRunner@3571b748</td></tr>
+</table><p>
+</body>
+</html>
